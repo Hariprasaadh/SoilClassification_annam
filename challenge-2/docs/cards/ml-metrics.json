@@ -1,0 +1,25 @@
+{
+  "task": "One-Class Soil Detection",
+  "approach": "Anomaly Detection (One-Class Classification)",
+  "Name": "K. Hariprasaadh",
+  "Kaggle Username": "hariprasaadh",
+  "Team Name": "EeSalaCupNamde",
+  "training_data_used": "Only soil images",
+  "testing_goal": "Detect deviations from soil patterns",
+  "validation_accuracy_soil": 0.7828,
+  "validation_accuracy_soil_percent": 78.28,
+  "submission_summary": {
+    "total_images": 967,
+    "predicted_soil": 272,
+    "predicted_non_soil": 695,
+    "soil_percentage": 28.1,
+    "non_soil_percentage": 71.9,
+    "average_soil_probability": 0.1994,
+    "submission_file": "submission.csv",
+    "submission_format": ["image_id", "label (1=soil, 0=non-soil)"]
+  },
+  "model_files": {
+    "feature_extractor": "soil_anomaly_detector_feature_extractor.h5",
+    "parameters": "soil_anomaly_detector_parameters.npz"
+  }
+}
